@@ -119,8 +119,8 @@ export default function Portfolio() {
           transition={{ delay: 0.8 }}
         >
           <motion.a
-            href={process.env.PUBLIC_URL + "/SHAREENA_RESUME.pdf"}
-            download="SHAREENA_RESUME.pdf"
+            href={process.env.PUBLIC_URL + "/SHAREENA-MOHAMMAD.pdf"}
+            download="SHAREENA-MOHAMMAD.pdf"
             className="inline-flex items-center px-8 py-3 text-white bg-gradient-to-r from-purple-600 to-pink-600 rounded-full hover:from-purple-700 hover:to-pink-700 transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             whileHover={{ 
               scale: 1.05,
@@ -198,9 +198,9 @@ export default function Portfolio() {
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectCard
             title="Fashion Commerce Platform"
-            description="Modern e-commerce website for fashion retail with responsive design, product catalog, and seamless shopping experience."
+            description="Comprehensive e-commerce platform for fashion retail featuring product catalog, shopping cart functionality, user authentication, and secure payment integration. Implemented responsive design with modern UI/UX principles, ensuring optimal user experience across all devices. Built with React and Tailwind CSS for performance and scalability, deployed on Vercel for seamless global access."
             link="https://fashion-commerce-lime.vercel.app/"
-            tech={["React", "Tailwind CSS", "JavaScript", "Vercel"]}
+            tech={["React", "Tailwind CSS", "JavaScript", "Vercel", "E-commerce", "Responsive Design"]}
             featured={true}
           />
           <ProjectCard
