@@ -205,13 +205,13 @@ export default function Portfolio() {
           />
           <ProjectCard
             title="BingeGala"
-            description="Interactive mini-theater platform with Next.js and Tailwind."
-            tech={["Next.js", "Tailwind CSS", "React"]}
+            description="Immersive web platform that transforms ordinary moments into extraordinary memories by elevating life's special occasions with personalized mini theater experiences. Worked on UI/UX development using HTML5, CSS3, Tailwind CSS, Next.js, and JavaScript to create an interactive, engaging user interface. Collaborated with backend developers to ensure seamless functionality and implemented responsive design principles for optimal accessibility across various devices."
+            tech={["Next.js", "Tailwind CSS", "React", "HTML5", "CSS3", "JavaScript"]}
           />
           <ProjectCard
             title="Genetic Disease Detection"
-            description="Pupillometry-based ML system for identifying Retinitis Pigmentosa."
-            tech={["Python", "Machine Learning", "Data Analysis"]}
+            description="Pupillometry-based ML system for identifying Retinitis Pigmentosa. Developed interactive web interfaces using HTML5, CSS3, Tailwind CSS, Next.js, and JavaScript. Collaborated with backend developers to ensure seamless functionality and implemented responsive design principles for optimal accessibility across various devices."
+            tech={["Python", "Machine Learning", "Data Analysis", "HTML5", "CSS3", "Tailwind CSS", "Next.js", "JavaScript"]}
           />
         </div>
       </section>
