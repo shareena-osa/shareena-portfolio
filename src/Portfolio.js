@@ -475,7 +475,6 @@ const Skill = ({ icon, name, color, delay = 0 }) => (
   <motion.div
     className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border border-white/20"
     whileHover={{ 
-      rotate: [0, 3, -3, 0], 
       y: -5,
       scale: 1.05,
     }}
@@ -483,16 +482,9 @@ const Skill = ({ icon, name, color, delay = 0 }) => (
     whileInView={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.5, delay }}
   >
-    <motion.div 
-      className={`text-5xl mb-3 ${color}`}
-      whileHover={{ 
-        rotate: [0, 360],
-        scale: 1.2,
-      }}
-      transition={{ duration: 0.5 }}
-    >
+    <div className={`text-5xl mb-3 ${color}`}>
       {icon}
-    </motion.div>
+    </div>
     <p className="text-gray-800 font-semibold">{name}</p>
   </motion.div>
 );
