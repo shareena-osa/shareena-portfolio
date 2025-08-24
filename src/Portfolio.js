@@ -229,6 +229,35 @@ export default function Portfolio() {
               x: 10,
             }}
           >
+            <div className="flex items-center justify-between mb-3">
+              <h3 className="text-xl font-semibold text-purple-700">Web Developer</h3>
+              <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">
+                Current
+              </span>
+            </div>
+            <p className="text-gray-700 font-medium mb-2">RAISING100X</p>
+            <p className="text-gray-600 mb-2">Duration: June 2024 - Present</p>
+            <p className="text-gray-700 mb-3">
+              Working as a full-time web developer, developing and maintaining web applications using modern technologies. 
+              Contributing to various projects and collaborating with cross-functional teams to deliver high-quality solutions.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Web Development</span>
+              <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Full-Stack</span>
+              <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Modern Technologies</span>
+            </div>
+          </motion.div>
+          
+          <motion.div 
+            className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-6 border border-white/20"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            whileHover={{ 
+              scale: 1.02,
+              x: -10,
+            }}
+          >
             <h3 className="text-xl font-semibold text-purple-700 mb-3">Frontend Developer Intern</h3>
             <p className="text-gray-700 font-medium mb-2">VR1 IT Solutions</p>
             <p className="text-gray-600 mb-2">Duration: August 2024 - October 2024 (3 months)</p>
