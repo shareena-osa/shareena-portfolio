@@ -217,6 +217,80 @@ export default function Portfolio() {
       </section>
 
       <section className="max-w-5xl mx-auto mb-16">
+        <SectionHeader title="Internships" />
+        <div className="space-y-6">
+          <motion.div 
+            className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-6 border border-white/20"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            whileHover={{ 
+              scale: 1.02,
+              x: 10,
+            }}
+          >
+            <h3 className="text-xl font-semibold text-purple-700 mb-3">Frontend Developer Intern</h3>
+            <p className="text-gray-700 font-medium mb-2">VR1 IT Solutions</p>
+            <p className="text-gray-600 mb-2">Duration: August 2024 - October 2024 (3 months)</p>
+            <p className="text-gray-700 mb-3">
+              Working on modern web applications using React, JavaScript, and responsive design principles. 
+              Contributing to frontend development projects and gaining hands-on experience with industry best practices.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">React</span>
+              <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">JavaScript</span>
+              <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Frontend Development</span>
+            </div>
+          </motion.div>
+          
+          <motion.div 
+            className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-6 border border-white/20"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            whileHover={{ 
+              scale: 1.02,
+              x: -10,
+            }}
+          >
+            <h3 className="text-xl font-semibold text-purple-700 mb-3">Software Developer Intern</h3>
+            <p className="text-gray-700 font-medium mb-2">Verzeo</p>
+            <p className="text-gray-600 mb-2">Duration: June 2022 - July 2022 (2 months)</p>
+            <p className="text-gray-600 mb-3">Location: Hyderabad, India</p>
+            
+            <div className="space-y-2 mb-4">
+              <p className="text-gray-700">• Participated in an internship program focused on developing web applications using the Spring Boot framework and MySQL database.</p>
+              <p className="text-gray-700">• Utilized Spring Boot features such as dependency injection, auto-configuration, Spring Data JPA, Spring Security for authentication and authorization, and Spring MVC to build scalable and secure RESTful APIs and web applications.</p>
+              <p className="text-gray-700">• Designed and implemented database schemas using MySQL, employing normalization techniques, indexing, and query optimization for efficient data storage and retrieval.</p>
+              <p className="text-gray-700">• Collaborated with team members using the Git version control system.</p>
+            </div>
+            
+            <div className="flex flex-wrap gap-2 mb-4">
+              <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Spring Boot</span>
+              <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">MySQL</span>
+              <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Spring Security</span>
+              <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Spring Data JPA</span>
+              <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Git</span>
+            </div>
+            
+            <div className="flex items-center gap-4">
+              <motion.a
+                href={process.env.PUBLIC_URL + "/VERZEO.jpeg"}
+                download="verzeo-certificate.jpeg"
+                className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg hover:from-purple-700 hover:to-pink-700 transition duration-300 text-sm font-medium"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <FaDownload className="mr-2" />
+                Download Certificate
+              </motion.a>
+              <span className="text-sm text-gray-600">Certificate ID: 1790591182</span>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      <section className="max-w-5xl mx-auto mb-16">
         <SectionHeader title="Education" />
         <div className="space-y-6">
           <motion.div 
