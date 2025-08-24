@@ -217,7 +217,7 @@ export default function Portfolio() {
       </section>
 
       <section className="max-w-5xl mx-auto mb-16">
-        <SectionHeader title="Internships" />
+        <SectionHeader title="Experience" />
         <div className="space-y-6">
           <motion.div 
             className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-6 border border-white/20"
@@ -240,6 +240,43 @@ export default function Portfolio() {
               <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">React</span>
               <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">JavaScript</span>
               <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Frontend Development</span>
+            </div>
+          </motion.div>
+          
+          <motion.div 
+            className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-6 border border-white/20"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            whileHover={{ 
+              scale: 1.02,
+              x: -10,
+            }}
+          >
+            <h3 className="text-xl font-semibold text-purple-700 mb-3">Freelance Frontend Developer</h3>
+            <p className="text-gray-700 font-medium mb-2">Self-Employed</p>
+            <p className="text-gray-600 mb-2">Duration: 2023 - 2024</p>
+            <p className="text-gray-700 mb-3">
+              Worked as a freelance frontend developer, delivering high-quality web applications and responsive designs for various clients.
+            </p>
+            
+            <div className="space-y-3 mb-4">
+              <div className="border-l-4 border-purple-400 pl-4">
+                <h4 className="font-semibold text-gray-800 mb-1">BingeGala</h4>
+                <p className="text-gray-700 text-sm">Interactive mini-theater platform with Next.js and Tailwind CSS</p>
+              </div>
+              <div className="border-l-4 border-purple-400 pl-4">
+                <h4 className="font-semibold text-gray-800 mb-1">Gayatri Matrimony</h4>
+                <p className="text-gray-700 text-sm">Matrimonial website with modern UI/UX and responsive design</p>
+              </div>
+            </div>
+            
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">React</span>
+              <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Next.js</span>
+              <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Tailwind CSS</span>
+              <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">JavaScript</span>
+              <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Responsive Design</span>
             </div>
           </motion.div>
           
