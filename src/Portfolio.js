@@ -179,11 +179,33 @@ export default function Portfolio() {
 
       <section className="max-w-5xl mx-auto mb-16">
         <SectionHeader title="Projects" />
+        
+        <motion.div
+          className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-6 mb-8 border border-white/20"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h3 className="text-xl font-semibold text-purple-700 mb-3">Project Overview</h3>
+          <p className="text-gray-700 leading-relaxed">
+            My portfolio showcases a diverse range of projects demonstrating expertise in frontend development, 
+            full-stack applications, and machine learning. Each project highlights different technical skills 
+            including responsive design, modern frameworks, and innovative problem-solving approaches. 
+            These projects reflect my ability to create user-centric solutions and adapt to various technology stacks.
+          </p>
+        </motion.div>
+        
         <div className="grid md:grid-cols-2 gap-8">
+          <ProjectCard
+            title="Fashion Commerce Platform"
+            description="Modern e-commerce website for fashion retail with responsive design, product catalog, and seamless shopping experience."
+            link="https://fashion-commerce-lime.vercel.app/"
+            tech={["React", "Tailwind CSS", "JavaScript", "Vercel"]}
+            featured={true}
+          />
           <ProjectCard
             title="BingeGala"
             description="Interactive mini-theater platform with Next.js and Tailwind."
-            link="https://bingegala.com"
             tech={["Next.js", "Tailwind CSS", "React"]}
           />
           <ProjectCard
@@ -335,19 +357,28 @@ const Skill = ({ icon, name, color, delay = 0 }) => (
   </motion.div>
 );
 
-const ProjectCard = ({ title, description, link, tech = [] }) => (
+const ProjectCard = ({ title, description, link, tech = [], featured = false }) => (
   <motion.div
-    className="bg-white/80 backdrop-blur-sm rounded-xl shadow-xl p-6 hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border border-white/20"
+    className={`bg-white/80 backdrop-blur-sm rounded-xl shadow-xl p-6 hover:shadow-2xl transform hover:scale-105 transition-all duration-300 border border-white/20 ${
+      featured ? 'ring-2 ring-purple-400 ring-opacity-50' : ''
+    }`}
     whileHover={{ scale: 1.03, y: -5 }}
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.6 }}
   >
-    <h3 className="text-xl font-semibold text-purple-700 mb-2">{title}</h3>
+    <div className="flex items-center justify-between mb-2">
+      <h3 className="text-xl font-semibold text-purple-700">{title}</h3>
+      {featured && (
+        <span className="px-2 py-1 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs font-bold rounded-full">
+          FEATURED
+        </span>
+      )}
+    </div>
    
     <p className="text-gray-700 mt-2 mb-4">{description}</p>
     {tech.length > 0 && (
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 mb-4">
         {tech.map((techItem, index) => (
           <span
             key={index}
@@ -357,6 +388,19 @@ const ProjectCard = ({ title, description, link, tech = [] }) => (
           </span>
         ))}
       </div>
+    )}
+    {link && (
+      <motion.a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg hover:from-purple-700 hover:to-pink-700 transition duration-300 text-sm font-medium"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <FaLaptopCode className="mr-2" />
+        Visit Live Site
+      </motion.a>
     )}
   </motion.div>
 );
