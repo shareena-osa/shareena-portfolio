@@ -119,8 +119,8 @@ export default function Portfolio() {
           transition={{ delay: 0.8 }}
         >
           <motion.a
-            href={process.env.PUBLIC_URL + "/SHAREENA-MOHAMMAD.pdf"}
-            download="SHAREENA-MOHAMMAD.pdf"
+            href={process.env.PUBLIC_URL + "/MOHAMMAD-SHAREENA-RESUME-S.pdf"}
+            download="MOHAMMAD-SHAREENA-RESUME.pdf"
             className="inline-flex items-center px-8 py-3 text-white bg-gradient-to-r from-purple-600 to-pink-600 rounded-full hover:from-purple-700 hover:to-pink-700 transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             whileHover={{ 
               scale: 1.05,
