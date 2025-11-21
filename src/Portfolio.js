@@ -197,6 +197,13 @@ export default function Portfolio() {
         
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectCard
+            title="Solo Leveling Workout System"
+            description="AI-powered fitness revolution platform that transforms your workout journey into an epic adventure. Features personalized workout plans powered by GPT-5, goal-oriented training programs (weight loss, muscle gain, mobility), and an engaging Solo Leveling-inspired ranking system that tracks progress from E-rank to S-rank hunter. Includes equipment-flexible workouts, health-first approach with medical history considerations, detailed exercise instructions, and comprehensive 7-day progressive plans with warmup, workout, and cooldown routines. Built with modern web technologies and deployed on Vercel."
+            link="https://solo-levelling-sooty.vercel.app/"
+            tech={["React", "Tailwind CSS", "JavaScript", "AI Integration", "Vercel", "Responsive Design", "Fitness App"]}
+            featured={true}
+          />
+          <ProjectCard
             title="Fashion Commerce Platform"
             description="Comprehensive e-commerce platform for fashion retail featuring product catalog, shopping cart functionality, user authentication, and secure payment integration. Implemented responsive design with modern UI/UX principles, ensuring optimal user experience across all devices. Built with React and Tailwind CSS for performance and scalability, deployed on Vercel for seamless global access."
             link="https://fashion-commerce-lime.vercel.app/"
