@@ -244,7 +244,6 @@ export default function Portfolio() {
               </span>
             </div>
             <p className="text-gray-700 font-medium mb-2">RAISING100X</p>
-            <p className="text-gray-600 mb-2">Duration: January 2025 - Present</p>
             <p className="text-gray-700 mb-3">
             Working as a full-time Java Developer, designing, developing, and maintaining scalable backend systems and enterprise-level
              applications using core Java and modern frameworks.collaborate closely with cross-functional teams to build robust solutions, optimize performance, and 
