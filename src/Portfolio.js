@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaLinkedin, FaLaptopCode, FaDownload, FaEnvelope, FaPhoneAlt, FaJava, FaPython, FaGitAlt, FaArrowUp, FaGithub, FaTwitter } from "react-icons/fa";
-import { SiExpo } from "react-icons/si";
+import { SiExpo, SiSpringboot } from "react-icons/si";
 
 export default function Portfolio() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -161,6 +161,7 @@ export default function Portfolio() {
             { icon: <FaJs />, name: "JavaScript", color: "text-yellow-400" },
             { icon: <FaReact />, name: "React & React Native", color: "text-sky-500" },
             { icon: <FaJava />, name: "Java", color: "text-red-500" },
+            { icon: <SiSpringboot />, name: "Spring Boot", color: "text-green-600" },
             { icon: <FaPython />, name: "Python", color: "text-blue-400" },
             { icon: <FaGitAlt />, name: "Git", color: "text-orange-400" },
             { icon: <FaCss3Alt />, name: "Tailwind CSS", color: "text-cyan-500" },
