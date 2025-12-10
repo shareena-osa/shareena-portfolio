@@ -237,16 +237,19 @@ export default function Portfolio() {
             }}
           >
             <div className="flex items-center justify-between mb-3">
-              <h3 className="text-xl font-semibold text-purple-700">Web Developer</h3>
+              <h3 className="text-xl font-semibold text-purple-700">Java Developer</h3>
               <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">
                 Current
               </span>
             </div>
             <p className="text-gray-700 font-medium mb-2">RAISING100X</p>
-            <p className="text-gray-600 mb-2">Duration: June 2024 - Present</p>
+            <p className="text-gray-600 mb-2">Duration: January 2025 - Present</p>
             <p className="text-gray-700 mb-3">
-              Working as a full-time web developer, developing and maintaining web applications using modern technologies. 
-              Contributing to various projects and collaborating with cross-functional teams to deliver high-quality solutions.
+            Working as a full-time Java Developer, designing, developing, and maintaining scalable backend systems and enterprise-level
+             applications using core Java and modern frameworks.collaborate closely with cross-functional teams to build robust solutions, optimize performance, and 
+             enhance application reliability. I actively participate in code reviews,
+            follow industry best practices, and ensure clean, maintainable code. 
+          
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Web Development</span>
